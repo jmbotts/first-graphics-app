@@ -4,5 +4,12 @@
 
 {% block headline %} This is my headline {% endblock %}
 {% block byline %} By Jackie {% endblock %}
-{% block pubdate %}<time datetime = "2020-03-07"  pubdate> March 7,2020 </time>{% endblock %}
+{% block pubdate %}<time datetime = "2020-03-07"  pubdate> 
+  MARCH 7,2020 </time>{% endblock %}
 
+{% block content %}
+
+{% for obj in site.data.harvard_park_homicides %}
+  <li>{{ obj.first_name }} {{obj.last_name}} <br>
+{% endfor %}
+{% endblock %}
