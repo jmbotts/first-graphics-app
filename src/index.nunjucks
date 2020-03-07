@@ -2,15 +2,29 @@
 
 {% import "_modules/link/link.nunjucks" as link %}
 
-{% block headline %} This is my headline {% endblock %}
-{% block byline %} By Jackie {% endblock %}
+{% block headline %} A south L.A. neighborhood grapples with a wave of violence {% endblock %}
+{% block byline %} By Jackie Botts {% endblock %}
 {% block pubdate %}<time datetime = "2020-03-07"  pubdate> 
-  MARCH 7,2020 </time>{% endblock %}
+  MARCH 7, 2020 </time>{% endblock %}
 
 
 
 {% block content %}
+<h3>One Corner. Four killings</h3>
+<div id="map"></div>
+
 <section>
+
+  <h3>A south L.A. neighborhood stands apart </h3>
+  <p> Harvard Park's 2016 homicide total was its highest in 15 years.</p>
+  <div class = "charts">
+    <div class="inline-chart" id="county-homicides">
+      <h4 class="chart-title">County homicides, 2000-2017</h4>
+    </div>
+    <div class="inline-chart" id="harvard-park-homicides">
+      <h4 class="chart-title">Harvard Park homicides, 2000-2017</h4>
+    </div>
+    </div>
   <h3> Lives lost in Harvard Park </h3>
   <p>The {{ site.data.harvard_park_homicides|length }} homicides in Harvard Park since 2000 were primarily black and Latino males, but the list includes husbands, wives, fathers, mothers of all ages, and even some small children.</p>
   <div class="card-columns">
